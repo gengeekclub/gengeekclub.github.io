@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Gengeek Club - Bài viết</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/vendor.css">  
+   <link rel="stylesheet" href="../css/main.css">
+        
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+
+   		<div class="logo">
+	         <a href="../index.html">Author</a>
+	    </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation sf-menu">
+					<li class="current"><a href="index.html" title="">Trang chủ</a></li>									
+					<!--<li class="has-children">
+						<a href="category/category.html" title="">Thể loại</a>
+						<ul class="sub-menu">
+			            <li><a href="../category/category-ai.html">Trí tuệ nhân tạo</a></li>
+			            <li><a href="../category/category-hard.html">Phần cứng</a></li>
+			            <li><a href="../category/category-soft.html">Phần mềm</a></li>
+			            <li><a href="../category/category-services.html">Tiện ích</a></li>
+			            <li><a href="../category/category-iot.html">Giải pháp IOT</a></li>
+			         </ul>
+					</li> -->
+					<li><a href="../about.html" title="">Thông tin</a></li>	
+					<li><a href="../contact.html" title="">Liên hệ</a></li>										
+				</ul>
+			</nav> <!-- end main-nav-wrap -->
+
+			<div class="search-wrap">
+				
+				<form role="search" method="get" class="search-form" action="#">
+					<label>
+						<span class="hide-content"> Tìm kiếm:</span>
+						<input type="search" class="search-field" placeholder="Type Yours Keywords" value="" name="s" title="Search for:" autocomplete="off">
+					</label>
+					<input type="submit" class="search-submit" value="Search">
+				</form>
+
+				<a href="#" id="close-search" class="close-btn">Close</a>
+
+			</div> <!-- end search wrap -->	
+
+			<div class="triggers">
+				<a class="search-trigger" href="#"><i class="fa fa-search"></i></a>
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+			</div> <!-- end triggers -->	
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+   
+
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="blog-single">
+   	<div class="row">
+   		<div class="col-twelve">
+
+   			<article class="format-standard">  
+
+   			
+					<div class="primary-content">
+
+						<h1 class="page-title">Teachable Machine - Tạo ứng dụng Machine Learning đơn giản (P.1)</h1>	
+
+						<ul class="entry-meta">
+							<li class="date">15 Tháng 3, 2021</li>						
+							<li class="cat"><a href="#">AI</a></li>				
+						</ul>						
+
+						<p class="lead">Tạo ứng dụng trong vòng 15 phút, bài viết này sẽ khái quát cách bạn sẽ làm thế nào.</p> 
+
+						<p>Với sự phát triển của công nghệ,tự động hóa dần trở thành 1 phần của cuộc sống. Chính vì lẽ đó mà Machine Learning đã và đang trở thành công nghệ cốt lõi của kỷ nguyên này. Các tập đoàn, công ty công nghệ lớn đang đầu tư phát triển mạnh về mảng này, trong số đó phải nói đến Google - 1 công ty đa quốc gia và tất nhiên là có rất nhiều tiền nên cũng khá hào phóng.</p>
+
+						<p><img src="../images/ai.jpg" alt=""></p>
+						
+						<p> Trức tiên, hãy truy cập vào <a href ="https://teachablemachine.withgoogle.com/">Teachable Machine</a> - Một sản phẩm của ông lớn hào phóng Google.</p>
+
+						<p> Tiếp tục nhấn vào "GET STARTED" để bắt đầu sử dụng" </p>
+						<p><img src="../images/capture.png" alt=""></p>
+						<p> Giao diện hiện ra sẽ xuất hiện như thế này, các tùy chọn sẽ bao gồm như sau: </p>
+						<li> Open an existing project from Drive: Mở dự án trước đó có sẵn được lưu trữ trên <a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a> của bạn</li>
+						<li> Open an existing project from a file: Tương tự như trên nhưng là từ máy của bạn.</li>
+						<li> Image Project: Bắt đầu dự án dạng "Phân loại ảnh".</li>
+						<li> Audio Project: Bắt đầu dự án dạng "Phân loại âm thanh".</li>
+						<li> Pose Project: Bắt đầu dự án dạng "Phân loại kiểu dáng".	</li>
+						<p> Trong bài viết này, tôi sẽ làm ví dụ cho việc phân loại ảnh nên sẽ chọn "Image Project". Nếu bạn chưa biết phân loại ảnh dùng để làm gì, thì tham khảo video này:</p>
+						<div class="content-media">
+							<div class="fluid-video-wrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/ydzJPeeMiMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div> 
+						</div>
+						<p> Trước khi tiếp tục, hãy xác định là bạn muốn phân loại ảnh gì, nếu không biết thì hãy tham khảo video trên và thử tìm trên <a href="https://www.google.com/">Google</a>, còn không thì hãy tiếp tục nào.</p>
+						
+						<p class="tags">
+		  			     	<span>Chủ đề :</span>
+		  				  	<a href="#">AI</a>
+		  			   </p>
+
+		  			   <div class="author-profile">
+		  			   	<img src="../images/avatars/admin.jpg" alt="">
+
+		  			   	<div class="about">
+		  			   		<h4><a href="#">Trumpiter.max</a></h4>
+		  			   	
+		  			   		<p>Con đường ngắn nhất cho việc nắm giữ kiến thức là thực hành.
+		  			   		</p>
+
+		  			   		<ul class="author-social">
+		  			   			<li><a href="#">Facebook</a></li>
+						        	<li><a href="#">Twitter</a></li>
+						        	<li><a href="#">GooglePlus</a></li>
+						        	<li><a href="#">Instagram</i></a></li>					        	
+		  			   		</ul>
+		  			   	</div>
+		  			   </div> <!-- end author-profile -->						
+
+					</div> <!-- end entry-primary -->		  			   
+
+	  			   <div class="pagenav group">
+		  			   <div class="prev-nav">
+		  			   	<a href="teslacar.html" rel="prev">
+		  			   		<span>Trước</span>
+		  			   		Tesla - Lý do thành công
+		  			   	</a>
+		  			   </div>
+		  				<div class="next-nav">
+		  					<a href="waterfallmini.html" rel="next">
+		  						<span>Tiếp</span>
+		  			   		Đài phun nước mini
+		  					</a>
+		  				</div>  				   
+	  				</div>
+
+				</article>
+   		
+
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->
+
+		<div class="comments-wrap">
+			<div id="comments" class="row">
+				<div class="col-full">
+
+               <h3>0 Comments</h3>
+				
+
+               <!-- respond -->
+               <div class="respond">
+
+               	<h3>Comment bài viết</h3>
+
+                  <form name="contactForm" id="contactForm" method="post" action="">
+  					   <fieldset>
+
+                     <div class="form-field">
+  						      <input name="cName" type="text" id="cName" class="full-width" placeholder="Tên" value="">
+                     </div>
+
+                     <div class="form-field">
+  						      <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Địa chỉ Email" value="">
+                     </div>
+
+                     <div class="form-field">
+  						      <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website"  value="">
+                     </div>
+
+                     <div class="message form-field">
+                        <textarea name="cMessage" id="cMessage" class="full-width" placeholder="Ý kiến đóng góp" ></textarea>
+                     </div>
+
+                     <button type="submit" class="submit button-primary">Xác nhận</button>
+
+  					   </fieldset>
+  				      </form> <!-- Form End -->
+
+               </div> <!-- Respond End -->
+
+         	</div> <!-- end col-full -->
+         </div> <!-- end row comments -->
+		</div> <!-- end comments-wrap -->
+
+   </section> <!-- end content -->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">  
+
+	      	<div class="col-four tab-full mob-full footer-info">            
+
+	            <h4>Tổng quan</h4>
+
+	               <p>
+		          	Gengeek - CLB dành cho những ai đam mê công nghệ hoặc có sở thích nghiên cứu xu hướng phát triển của thế giới về lĩnh vực kỹ thuật số. Chúng tôi luôn hoạt động dựa trên lý tưởng của CLB - bất kỳ ai cũng có thể tiếp cận kiến thức.
+		          	</p>
+
+		      </div> <!-- end footer-info -->
+
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+	      		<h4>Góp ý</h4>
+
+	      		<ul>
+	      			<li><a href="about.html">Thông tin</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Sự kiện</a></li>
+						<li><a href="#">Chính sách</a></li>
+					</ul>
+
+	      	</div> <!-- end site-links -->  
+
+	      	<div class="col-two tab-1-3 mob-1-2 social-links">
+
+	      		<h4>Mạng xã hội</h4>
+
+	      		<ul>
+	      			<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Dribbble</a></li>
+						<li><a href="#">Google+</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+	      	           	
+	      	</div> <!-- end social links --> 
+
+	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
+
+	      		<h4>Đăng ký</h4>
+
+	      		<p>Biết tin mới sớm nhất, đăng ký ngay </p>
+
+	      		<div class="subscribe-form">
+	      	
+	      			<form id="mc-form" class="group" novalidate="true">
+
+							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Email của bạn là?" required=""> 
+	   		
+			   			<input type="submit" name="subscribe" >
+		   	
+		   				<label for="mc-email" class="subscribe-message"></label>
+			
+						</form>
+
+	      		</div>	      		
+	      	           	
+	      	</div> <!-- end subscribe -->         
+
+	      </div> <!-- end row -->
+
+   	</div> <!-- end footer-main -->
+
+      <div class="footer-bottom">
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright of Gengeek Club 2020</span> 
+		         	<span>Designed by Trumpiter.max</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> 
+      </div> <!-- end footer-bottom -->  	
+
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
