@@ -1,4 +1,5 @@
-Note:
+
+#Note:
 1. Audio format:
 <!-- format audio here -->
             <article class="brick entry format-audio animate-this">
